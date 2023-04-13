@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일단어 무한 쭈꾸요미</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <button id="view-list-btn">단어 목록</button>
+    </header>
+    <main>
+        <p>오늘 공부량: <span id="today-i-know-count">0</span></p>
+        <div id="word-container">
+            <div id="kanji"></div>
+            <div id="hidden-info" hidden>
+                <div id="hiragana"></div>
+                <div id="meaning"></div>
+            </div>
+        </div>
+        <div id="buttons">
+            <button id="i-know-btn">알아</button>
+            <button id="i-dont-know-btn">몰라</button>
+        </div>
+        <div id="modal" class="hidden">
+            <div class="modal-content">
+                <div id="filter">
+                    <input type="checkbox" id="filter-0" checked>0
+                    <input type="checkbox" id="filter-1" checked>1
+                    <input type="checkbox" id="filter-2" checked>2
+                    <input type="checkbox" id="filter-3" checked>3+
+                </div>
+                <table>
+                    <colgroup>
+                        <col width="25%">
+                        <col width="25%">
+                        <col width="30%">
+                        <col width="20%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>단어</th>
+                            <th>발음</th>
+                            <th>뜻</th>
+                            <th>까먹은 횟수</th>
+                        </tr>
+                    </thead>
+                </table>
+                <div class="table-container">
+                <table id="word-table">
+                    <colgroup>
+                        <col width="25%">
+                        <col width="25%">
+                        <col width="30%">
+                        <col width="20%">
+                    </colgroup>
+                    <tbody id="word-list">
+                    </tbody>
+                </table>
+                </div>
+                <button id="close-modal">닫기</button>
+            </div>
+        </div>
+        
+    </main>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
