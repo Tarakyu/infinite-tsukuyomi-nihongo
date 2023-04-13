@@ -7706,7 +7706,7 @@ updateWordList();
 
 // Add event listener for tapping the screen
 document.addEventListener("click", (event) => {
-    if (event.target !== iKnowButton && event.target !== iDontKnowButton) {
+    if (event.target !== iKnowButton && event.target !== iDontKnowButton && event.target !== viewListButton && event.target !== closeModalButton) {
         revealHiddenInfo();
     }
 });
