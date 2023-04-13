@@ -7721,6 +7721,7 @@ if (savedProgressJSON) {
 }
 
 function showModal() {
+    updateWordList();
     modalElement.classList.remove("hidden");
 }
 

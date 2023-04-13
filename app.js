@@ -7688,6 +7688,7 @@ if (savedProgressJSON) {
     displayCurrentWord();
 }
 function showModal() {
+    updateWordList();
     modalElement.classList.remove("hidden");
 }
 function closeModal() {
